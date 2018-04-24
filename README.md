@@ -6,7 +6,7 @@ So, first we start with building word embedding from [The Reuters data set](http
 In the data directory, you find The Reuters data set and their word embeddings, we used 300 as dimension.
 After align these two word embeddings we found that the performance is very bad. The accuracy is about 0.13 tested on 734 words using k-Nearest neighbor at k = 10.
 
-That’s expected since the reuters data set have only 33995 words and this method relay on the co-occurence of words. You can find all details about this in the log [file](dumped/data/reuters/train_reuters)
+That’s expected since the reuters data set have only 33995 words and this method relay on the co-occurence of words. You can find all details about this in the [log file](dumped/debug/reuters/train_reuters)
 
 So, we decided to change the first embedding and replaced by wiki.en.vec and we kept the same target. We found a impressive result, the accuracy was 0.786 tested on 1500 words using K-Nearest Neighbor at k = 1. Even more by changing the metric to CSLS* , the accuracy was 0.822. ([log file](dumped/debug/wiki/train_wiki))
 
