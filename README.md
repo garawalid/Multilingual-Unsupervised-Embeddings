@@ -13,3 +13,5 @@ So, we decided to change the first embedding and replaced by wiki.en.vec and we 
 CSLS* : CROSS-DOMAIN SIMILARITY LOCAL SCALING simply is a new metric developed to get a better mapping, [read more](https://arxiv.org/pdf/1710.04087.pdf)
 
 After getting the mapping, we can translate some words using translate_wiki.py , and also it’s possible to get the best dictionary. These two approach relay on the k-nearest neighbor at k = 1. 
+
+You can download embeddings of this experiment frome [here](https://mega.nz/#F!FEMThQ5B!dYQD6R53zKQFXV14RLIVFA)
